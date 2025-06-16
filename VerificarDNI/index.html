@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador DNI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<!-- Programa que se utiliza para poder verificar un dni introducido, util para importar en el futuro en proyectos que implementen un DNI como clave principal/Identificación -->
+<body class = body>
+    <form action = "php/verificarDNI.php" method="post" class = form name = "DNI">
+        <label for="dni">Introduzca un DNI</label>
+        <input type="text" name="dni" id="dni" minlength = "9" maxlength = "9" oninput="this.value = this.value.toUpperCase()">
+        
+        <input type="submit" value="Verificar DNI">
+    </form>
+</body>
+</html>
